@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { XFaceDetectorComponent } from './x-face-detector/x-face-detector.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    XFaceDetectorComponent
   ],
   imports: [
     BrowserModule,
