@@ -8,7 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule, {
+platformBrowserDynamic().bootstrapModule(AppModule, { ngZone: 'noop',
   defaultEncapsulation: ViewEncapsulation.ShadowDom
 })
   .catch(err => console.error(err));
