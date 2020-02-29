@@ -6,6 +6,8 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
+import { environment } from '../../environments/environment';
+
 @Component({
   selector: 'app-x-face-detector',
   template: `
@@ -34,7 +36,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class XFaceDetectorComponent {
-  wasmpath = '/assets/tfjs-backend-wasm.wasm';
+  wasmpath = environment.xFaceDetector.wasmpath;
   imgurl = 'https://avatars3.githubusercontent.com/u/3065761';
 
   constructor(public element: ElementRef) {}

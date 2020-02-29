@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  xFaceDetector: {
+    wasmpath: '/angular-x-face-detector/assets/tfjs-backend-wasm.wasm'
+  }
 };
